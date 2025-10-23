@@ -1,0 +1,16 @@
+name: Runner
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  macos:
+    name: "Run on the fastest infrastructure"
+    runs-on: ghcr.io/cirruslabs/macos-runner:sequoia
+    steps:
+      - uses: actions/checkout@v4
+      - name: List Installed Xcodes
+        run: xcodes installed
+      - name: Select Xcode 16.2
+        run: sudo xcodes select 16.2
