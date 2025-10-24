@@ -8,6 +8,7 @@ jobs:
   macos:
     name: "Run on the fastest infrastructure"
     runs-on: ghcr.io/cirruslabs/macos-runner:sequoia
+    runner_group_id: 123
     steps:
       - uses: actions/checkout@v4
       - name: List Installed Xcodes
