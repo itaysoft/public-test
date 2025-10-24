@@ -23,5 +23,7 @@ jobs:
           sw_vers
       - name: List Installed Xcodes
         run: xcodes installed
+      - name: Install Xcode 15.4
+        run: xcodes install 15.4
       - name: List Installed iOS SDKs
         run: xcrun simctl list
