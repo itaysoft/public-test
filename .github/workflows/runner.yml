@@ -9,9 +9,8 @@ jobs:
     strategy:
       matrix:
         macos-version:
+          - tahoe
           - sequoia
-          - monterey
-          - ventura
           - sonoma
     name: "Run on the fastest infrastructure"
     runs-on: ["ghcr.io/cirruslabs/macos-runner:${{ matrix.macos-version }}", "runner_group_id:3"]
