@@ -24,4 +24,4 @@ jobs:
       - name: List Installed Xcodes
         run: xcodes installed
       - name: List Installed iOS SDKs
-        run: xcrun simctl list --json
+        run: xcrun simctl list
